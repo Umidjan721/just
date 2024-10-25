@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Nabiyev</h1>
+    <h2>Umidjon</h2>
+    <img src="./depositphotos_270304212-stock-photo-tashkent-television-tower-uzbekistan.jpg" alt="">
+
+
+    <h2>Calculator</h2>
+<div>
+    <label>
+        a = 
+        <input type="number" name="x">
+    </label>
+</div>
+<div>
+    <label>
+        b =
+        <input type="number" name="y">
+    </label>
+</div>
+<div class="operators">
+    <button onclick="sum()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiple()">*</button>
+    <button onclick="devide()">/</button>
+</div>
+<span id="Calculator">Answer:</span>
+
+<div class="coursePrice">
+    <h1>Calculation Of Course</h1>
+    <label>
+        Course:
+        <select id="courseName" id="" oninput="coursePrice()">
+            <option value="none">Choose the Course</option>
+            <option value="Python">Python</option>
+            <option value="Front">Frontend</option>
+            <option value="UX">UX/UI</option>
+        </select>
+    </label>
+
+    <label>
+        Discount:
+        <input id="step" type="range" value="0" oninput="coursePrice()" min="0" max="50" step="5">
+        <span id="sale">0%</span>
+    </label>
+    <label>
+        Payment:
+        <input type="text" readonly class="price">
+
+    </label>
+
+</div>
+
+
+<div class="soon">
+    <h1>Registration form</h1>
+<label>
+    Name:
+    <input type="text" placeholder="Name">
+</label>
+<label for="">
+    Country:
+    <select name="" id="">
+        <option value="none">Choose the Country</option>
+        <option value="UZB">UZBEKISTAN</option>
+        <option value="RUS">RUSSIAN</option>
+        <option value="USA">AMERICA</option>
+    </select>
+</label>
+<label>
+    Phone number:
+    <select  id="soul" id="" oninput="soon()" >
+        <option value="UZBEKISTAN">+998</option>
+        <option value="RUSSIAN">+7</option>
+        <option value="AMERICA">+1</option>
+        <input type="text" readonly class="number">
+    </select>
+</label>
+
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+
+
